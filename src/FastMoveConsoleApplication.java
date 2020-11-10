@@ -6,6 +6,9 @@
 import base.Bike;
 import base.Person;
 import java.util.Scanner;
+import base.Parcel;
+import base.ParcelStatus;
+import base.Location;
 
 /**
  *
@@ -31,5 +34,14 @@ public class FastMoveConsoleApplication {
         System.out.println("Enter Lastname :");
         String lastName = newLastName.nextLine();
         this.newPerson1 = new Person(firstName, lastName);
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter width : ");
+        double widht = sc.nextDouble();
+        System.out.print("Enter latitude : ");
+        double latitude = sc.nextDouble();
+        System.out.println("Enter longitude : ");
+        double longitude = sc.nextDouble();
+        Parcel parcel = new Parcel(widht,ParcelStatus.READY_TO_SHIP,new Location(latitude,longitude));
     }
 }

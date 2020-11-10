@@ -29,7 +29,16 @@ public class ToyData {
     public static Parcel[] getParcels() {
         Parcel[] parcels = new Parcel[10];
       
-
+parcels[0] = new Parcel(20.0,ParcelStatus.READY_TO_SHIP,new Location(2.0,11.0));
+        parcels[1] = new Parcel(20.0,ParcelStatus.DELIVERED,new Location(21.0,1.0));
+        parcels[2] = new Parcel(20.0,ParcelStatus.SHIPPING,new Location(218.0,11.0));
+        parcels[3] = new Parcel(20.0,ParcelStatus.SHIPPING,new Location(295.0,61.0));
+        parcels[4] = new Parcel(20.0,ParcelStatus.READY_TO_SHIP,new Location(2.0,11.0));
+        parcels[5] = new Parcel(20.0,ParcelStatus.READY_TO_SHIP,new Location(2.0,11.0));
+        parcels[6] = new Parcel(20.0,ParcelStatus.DELIVERED,new Location(2.0,11.0));
+        parcels[7] = new Parcel(20.0,ParcelStatus.DELIVERED,new Location(2.0,11.0));
+        parcels[8] = new Parcel(20.0,ParcelStatus.READY_TO_SHIP,new Location(2.0,11.0));
+        parcels[9] = new Parcel(20.0,ParcelStatus.DELIVERED,new Location(2.0,11.0));
         return parcels;
     }
 
