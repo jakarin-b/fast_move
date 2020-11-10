@@ -1,6 +1,7 @@
 package fastmove;
 
 import base.Person;
+import base.Bike;
 
 
 public class FastMove {

@@ -2,13 +2,17 @@ package data;
 
 import base.Bike;
 import base.Parcel;
+import base.ParcelStatus;
 import base.Person;
+import base.Location;
 
 public class ToyData {
 
     public static Bike[] getBikes() {
         Bike[] bikes = new Bike[3];
-        // your code
+        bikes[0] = new Bike("EM101",150);
+        bikes[1] = new Bike("BS999",200);
+        bikes[2] = new Bike("SN250",225);
 
         return bikes;
     }
@@ -22,7 +26,7 @@ public class ToyData {
 
     public static Parcel[] getParcels() {
         Parcel[] parcels = new Parcel[10];
-        // your code
+      
 
         return parcels;
     }
