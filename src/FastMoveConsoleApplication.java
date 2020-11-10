@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 import base.Bike;
+import base.Person;
 import java.util.Scanner;
 
 /**
@@ -12,6 +13,7 @@ import java.util.Scanner;
  */
 public class FastMoveConsoleApplication {
     Bike bikes;
+    Person newPerson;
     
     public FastMoveConsoleApplication(){
         Scanner scn1 = new Scanner(System.in);
@@ -21,6 +23,13 @@ public class FastMoveConsoleApplication {
         System.out.println("Enter Your engineCapacity");
         int num = scn2.nextInt();
         this.bikes = new Bike(name,num);
-                
+        
+        Scanner newFirstName = new Scanner(System.in);
+        System.out.println("Enter Firstname :");
+        String firstName = newFirstName.nextLine();
+        Scanner newLastName = new Scanner(System.in);
+        System.out.println("Enter Lastname :");
+        String lastName = newLastName.nextLine();
+        this.newPerson = new Person(firstName, lastName);
     }
 }
