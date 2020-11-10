@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class FastMoveConsoleApplication {
     Bike bikes;
-    Person newPerson;
+    Person newPerson1;
     
     public FastMoveConsoleApplication(){
         Scanner scn1 = new Scanner(System.in);
@@ -30,6 +30,6 @@ public class FastMoveConsoleApplication {
         Scanner newLastName = new Scanner(System.in);
         System.out.println("Enter Lastname :");
         String lastName = newLastName.nextLine();
-        this.newPerson = new Person(firstName, lastName);
+        this.newPerson1 = new Person(firstName, lastName);
     }
 }
